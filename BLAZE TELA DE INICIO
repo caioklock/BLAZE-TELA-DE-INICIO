@@ -1,0 +1,60 @@
+import * as React from 'react';
+import { Text, View, StyleSheet } from 'react-native';
+import Constants from 'expo-constants';
+
+// You can import from local files
+import AssetExample from './components/AssetExample';
+
+// or any pure javascript modules available in npm
+import { Card } from 'react-native-paper';
+
+export default function App() {
+  return (
+    
+    <View style={styles.container}>
+    <img src="https://logodownload.org/wp-content/uploads/2022/08/blaze-logo.png" style={styles.blaze}></img>
+      <Text style={styles.paragraph}>
+     O maior e mais confiável site de apostas
+      </Text>
+    <View style={styles.buttons}>
+    <button type="button" class="buttonOne" style={styles.buttonOne}>CCOME</button>
+    
+    </View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  blaze: {
+    marginTop: 240,
+    padding: 30,
+    paddingBottom: 0,
+    justifyContent: 'center',
+  },
+  paragraph: {
+    marginTop: -170,
+    margin: 40,
+    fontSize: 17,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: 'black',
+    fontFamily: 'Times',
+  },
+  container: {
+    flex: 1,
+    justifyContent: 'space-between',
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#FFFFF',
+    padding: 10,
+  },
+  buttonOne: {
+    padding: 15,
+    margin: 10,
+    backgroundColor: 'red',
+    color: 'black',
+    borderRadius: 13,
+    borderWidth: 2,
+    borderColor: '#457500'
+  },
+
+});
